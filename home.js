@@ -24,8 +24,9 @@
 //CODE HERE
 
 
+const greetUser = (username) => "Welcome back, " + username
 
-
+// console.log(greetUser("James"));
 
 //////////////////PROBLEM 2////////////////////
 /* 
@@ -51,7 +52,18 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
 
+//we need it to run through each set in the array, so we'll create a loop. Then we'll compare the zipcode with each element using if else.
 
+function canWeDeliver(zipCode) {
+    for(i = 0; i < deliveryAreaZipCodes.length; i++) {
+        if(zipCode === deliveryAreaZipCodes[i]){
+            return "You're in our delivery zone!"
+        }
+    }
+    return "Sorry, we can't deliver to that address"
+}
+
+console.log(canWeDeliver(85264));
 
 /* 
     Problem 2 Continued
@@ -72,6 +84,7 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 // CODE HERE
 
+function canWeDeliverTwo
 
 //////////////////PROBLEM 3////////////////////
 /* 
