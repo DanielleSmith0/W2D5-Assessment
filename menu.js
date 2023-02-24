@@ -32,7 +32,14 @@
 
 //CODE HERE
 
-
+const pizza {
+    name: "Classy Italian",
+    prize: 10,
+    category: "Neapolitan",
+    popularity: 2,
+    rating: 3,
+    tags: ["mozzarella", "tomatoes", "basil"]
+};
 
 //////////////////PROBLEM 2////////////////////
 /* 
