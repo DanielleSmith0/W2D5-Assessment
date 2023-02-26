@@ -59,7 +59,9 @@ const summedPrice = cart.reduce((acc, cur) => {
 
 //CODE HERE
 
-
+const calcFinalPrice = ((cartTotal, couponValue, tax) => {
+    return (cartTotal * tax) + cartTotal - couponValue
+});
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -84,6 +86,7 @@ const summedPrice = cart.reduce((acc, cur) => {
 /*
     TEXT ANSWER HERE
 
+    The customer should inform us their name (string, becasue its value is a word), whether they want their order to-Go (boolean, becasue it's true or false), their party size(number, because we just need a number of seats), any allergies (string of what their allergies are or if they have "none") their method of payment(string, becaue they have to state what form of payment they'd like to use).
 */
 
 /*
@@ -92,3 +95,11 @@ const summedPrice = cart.reduce((acc, cur) => {
 */
 
 //CODE HERE
+
+const customer = {
+    name: "Carter",
+    toGo: false,
+    partSize: 2,
+    allergies: "none",
+    paymentType: "credit card"
+}
