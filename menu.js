@@ -32,13 +32,13 @@
 
 //CODE HERE
 
-const pizza {
-    name: "Classy Italian",
-    prize: 10,
-    category: "Neapolitan",
-    popularity: 2,
+const pizza = {
+    name: "Neapolitan",
+    price: 10.50,
+    category: "main course",
+    popularity: 4,
     rating: 3,
-    tags: ["mozzarella", "tomatoes", "basil"]
+    tags: ["popular", "vegan options", "group"]
 };
 
 //////////////////PROBLEM 2////////////////////
@@ -51,6 +51,7 @@ const pizza {
 
 //CODE HERE
 
+console.log(pizza.popularity);
 
 /*
     Second, log the second tag in your pizza's
@@ -61,7 +62,7 @@ const pizza {
 
 //CODE HERE
 
-
+console.log(pizza.tags[1]);
 /*
     Third, destructure the price off of the
     pizza object.
@@ -71,6 +72,9 @@ const pizza {
 
 //CODE HERE
 
+let {price} = pizza
+
+console.log(price);
 
 /*
     Fourth, and last, destructure the category
@@ -81,6 +85,9 @@ const pizza {
 
 //CODE HERE
 
+let {category} = pizza
+
+console.log(category);
 
 //////////////////PROBLEM 3////////////////////
 /* 
