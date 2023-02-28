@@ -103,7 +103,48 @@ console.log(category);
 
 //CODE HERE
 
-
+let pizzaArr = [
+    {    
+    name: "Neapolitan",
+    price: 10.50,
+    category: "sampler",
+    popularity: 4,
+    rating: 3,
+    tags: ["popular", "vegan options", "group", "thin crust", "classic"]
+    },
+    {
+    name: "Chicago",
+    price: 13.75,
+    category: "main course",
+    popularity: 3,
+    rating: 4,
+    tags: ["thick crust", "classic", "group"]    
+    },
+    {
+    name: "New York",
+    price: 9.25,
+    category: "sampler",
+    popularity: 4.5,
+    rating: 1.5,
+    tags: ["popular", "thin crust", "kids"]
+    },
+    {
+        name: "Sicilian",
+    price: 12.50,
+    category: "sampler",
+    popularity: 3,
+    rating: 2.5,
+    tags: ["thick crust","classic", "group"]
+    },
+    {
+    name: "Greek",
+    price: 11.50,
+    category: "main course",
+    popularity: 4,
+    rating: 3.5,
+    tags: ["popular", "vegan options","kids", "thick crust"]
+    }
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
