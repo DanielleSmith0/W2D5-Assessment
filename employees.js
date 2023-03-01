@@ -33,8 +33,6 @@ class Employee {
     }
 }
 
-// console.log(employee1.name);
-
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -105,15 +103,21 @@ empTwo["name"] = "Nick"
 class Manager extends Employee {
     constructor (name, shifts, employees) {
         super (name, shifts)
-        this.employees = employees[]
+        this.employees = employees;
+    }
+    getEmployees() {
+        console.log(this.name, "manages", this.employees)
+    }
+    addEmployee(emp) {
+        employees.push(emp);
     }
 }
 
-
+let danielle = new Manager('jef','9-5','many')
+    danielle.getEmployees()
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
-
     You can use this sample data or make
     up your own:
     name: Winston

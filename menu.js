@@ -103,7 +103,7 @@ console.log(category);
 
 //CODE HERE
 
-let pizzaArr = [
+let foodArr = [
     {    
     name: "Neapolitan",
     price: 10.50,
@@ -129,7 +129,7 @@ let pizzaArr = [
     tags: ["popular", "thin crust", "kids"]
     },
     {
-        name: "Sicilian",
+    name: "Sicilian",
     price: 12.50,
     category: "sampler",
     popularity: 3,
@@ -160,9 +160,9 @@ let pizzaArr = [
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+const filteredFood = foodArr.filter(crust => crust.tags === "thin crust")
 
-
+console.log(filteredFood);
 
 //////////////////PROBLEM 5////////////////////
 /* 
