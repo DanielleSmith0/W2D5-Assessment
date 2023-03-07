@@ -106,15 +106,13 @@ class Manager extends Employee {
         this.employees = employees;
     }
     getEmployees() {
-        console.log(this.name, "manages", this.employees)
+        console.log(`${this.name} manages ${this.employees}`)
     }
     addEmployee(emp) {
-        employees.push(emp);
+        this.employees.push(emp);
     }
 }
 
-let danielle = new Manager('jef','9-5','many')
-    danielle.getEmployees()
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
@@ -127,6 +125,7 @@ let danielle = new Manager('jef','9-5','many')
 
 //CODE HERE
 
+let manager = new Manager("Winston", "weekday mornings, weekday afternoons", ["Cece", "Schmidt"]);
 
 /*
     Call the `getEmployees` method on the
@@ -134,6 +133,8 @@ let danielle = new Manager('jef','9-5','many')
 */
 
 //CODE HERE
+
+manager.getEmployees();
 
 /*
     Call the `addEmployee` method on the 
@@ -143,6 +144,8 @@ let danielle = new Manager('jef','9-5','many')
 
 //CODE HERE 
 
+manager.addEmployee("Steph");
+
 /*
     Call the `getEmployees` method on the
     `manager` object again to confirm 
@@ -150,3 +153,5 @@ let danielle = new Manager('jef','9-5','many')
 */
 
 //CODE HERE
+
+manager.getEmployees();
