@@ -61,6 +61,7 @@ class Ticket {
 
 //CODE HERE
 
+let firstTicket = new Ticket("pizza, bread, and soda", "7:03 PM", 575);
 
 /*
     Call the `updateStatus` method on
@@ -69,3 +70,5 @@ class Ticket {
 */
 
 //CODE HERE
+
+firstTicket.updatesStatus("cooking");
