@@ -221,14 +221,18 @@ const filteredFood = foodArr.filter(crust => crust.tags === "thin crust")
 // console.log(foodArr[].price)
 // for (let i = 0)
 
-let filterByProperty = foodArr.filter(function(property,number,type) {
-    if (type === "above"){
-        filteredFood = property.price > number;
-    }else if (type === "below"){
-        filteredFood = property.price < number;
-    }
- return filteredFood
-});
+// console.log(foodArr[2]["price"]) USE BRACKET NOTATION.
+
+let filterByProperty = (property, number, type) => {
+    let newArray = foodArr.filter (function(food) {
+        if (type === "above"){
+            return food[property] > number;
+        }else{
+            return food[property] < number;
+        };
+    });
+    return newArray
+}
 /*
     Invoke the `filterByProperty` function passing
     in a value for each paramter.
@@ -238,5 +242,5 @@ let filterByProperty = foodArr.filter(function(property,number,type) {
 
 //CODE HERE
 
-console.log(filterByProperty(foodArr.price, 11, "above"))
+console.log(filterByProperty('price', 11, "above"))
 

@@ -36,9 +36,8 @@ class Ticket {
         this.items = items;
         this.orderTime = orderTime;
         this.customerId = customerId;
+        this.status = "queued";
     }
-
-    status = "queued"
 
     updatesStatus(newStatus) {
         this.status = newStatus;

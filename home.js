@@ -129,9 +129,16 @@ const deals = [
 
 //CODE HERE
 
-deals[0].title = "10% Off!";
+// deals[0].title = "10% Off!";
 
-console.log(deals);
+// console.log(deals);
+
+deals[0].title = deals[0].title.replace("15", "10");
+
+console.log(deals[0].title);
+
+//1. what are you replacing and 2. what you're replacing it with
+
 
 /*
     The restaurant is going to continue its
@@ -148,6 +155,6 @@ console.log(deals);
 
 //CODE HERE
 
-deals[1].desc = 'This deal lasts until the end of April!';
+deals[1].desc = deals[1].desc.replace("March", "April");
 
-console.log(deals);
+console.log(deals[1].desc);
